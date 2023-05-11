@@ -23,14 +23,27 @@
 #
 # print(add(3, 5, 8))
 
+#
+# def add(**kwargs):
+#     print(kwargs)
+#
+#     for kye, value in kwargs.items():
+#         print(kye)
+#         print(value)
+#
+#
+# add(add=5, multiply=3)
 
-def add(**strick):
-    print(strick)
+class Car:
 
-    for kye, value in strick.items():
-        print(kye)
-        print(value)
+    def __init__(self, **kwargs):
+        self.company = kwargs['company']
+        self.color = kwargs['color']
+        self.mirror = kwargs['mirror']
 
 
+car_object = Car(color=5, mirror="2 mirror")
 
-add(add=5, multiply=3)
+
+print(type(car_object.color))
+print(car_object.color)
