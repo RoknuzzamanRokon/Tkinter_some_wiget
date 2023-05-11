@@ -34,16 +34,60 @@
 #
 # add(add=5, multiply=3)
 
+# class Car:
+#
+#     def __init__(self, **kwargs):
+#         self.company = kwargs['company']
+#         self.color = kwargs['color']
+#         self.mirror = kwargs['mirror']
+#
+#
+# car_object = Car(color=5, mirror="2 mirror")
+#
+#
+# print(type(car_object.color))
+# print(car_object.color)
+
+
 class Car:
-
     def __init__(self, **kwargs):
-        self.company = kwargs['company']
-        self.color = kwargs['color']
-        self.mirror = kwargs['mirror']
+        self.brand = kwargs.get('brand')
+        self.version = kwargs.get("version")
+        self.color = kwargs.get("color")
+        self.quantity = kwargs.get("quantity")
+        self.price = kwargs.get("price")
 
 
-car_object = Car(color=5, mirror="2 mirror")
+myclass_car_object = Car(version="1.1", brand="rk_roko")
+
+print(myclass_car_object.version)
 
 
-print(type(car_object.color))
-print(car_object.color)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
