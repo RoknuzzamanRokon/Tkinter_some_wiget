@@ -1,17 +1,27 @@
 # import pandas as pd
+# value = lambda x, y: x + y
 #
-#
-# def add(*args):
-#     x = []
-#     for i in args:
-#         x.append(i)
-#     pandas_dataframe = pd.DataFrame(x)
-#
-#     sum = pandas_dataframe.sum()[0]
-#     return sum
-#
-#
-# print(add(3,5,7,8))
+# print(value(52, 2))
+
+import pandas as pd
+
+
+def add(*args):
+    x = [num for num in args]
+    pandas_data_frame = pd.DataFrame(x)
+    sum = pandas_data_frame.sum()[0]
+    return sum
+
+    # x = []
+    # for i in args:
+    #     x.append(i)
+    # pandas_dataframe = pd.DataFrame(x)
+    #
+    # sum = pandas_dataframe.sum()[0]
+    # return sum
+
+
+print(add(3, 5, 7, 8))
 
 #
 # def add(*args):
@@ -49,21 +59,21 @@
 # print(car_object.color)
 
 
-class Car:
-    def __init__(self, **kwargs):
-        self.brand = kwargs.get('brand')
-        self.version = kwargs.get("version")
-        self.color = kwargs.get("color")
-        self.quantity = kwargs.get("quantity")
-        self.price = kwargs.get("price")
-
-
-myclass_car_object = Car(version="1.1", brand="rk_roko")
-
-print(myclass_car_object.version)
-
-
-
+# class Car:
+#     def __init__(self, brand, **kwargs):
+#         self.brand = ["brand"]
+#         self.version = kwargs.get("version")
+#         self.color = kwargs.get("color")
+#         self.quantity = kwargs.get("quantity")
+#         self.price = kwargs.get("price")
+#
+#
+# myclass_car_object = Car(version="1.1", brand="rk_roko")
+#
+# print(myclass_car_object.version)
+#
+#
+#
 
 
 
