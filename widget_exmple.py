@@ -1,5 +1,5 @@
 import tkinter
-
+from tkinter import *
 
 # Create a window.
 window = tkinter.Tk()
@@ -12,9 +12,13 @@ my_label = tkinter.Label(text="This is new text", font=("Arial", 24, "bold"))
 my_label.pack()
 
 
+def button_function():
+    print("Do something")
+
+
 # Create Button
 my_button = tkinter.Button()
-my_button.config(text="Click Here")
+my_button.config(text="Click Here",command=button_function)
 my_button.pack()
 
 
@@ -31,6 +35,7 @@ my_textbox = tkinter.Text()
 my_textbox.config(height=10, width=30)
 # Put cursor in text box.
 my_textbox.focus()
+my_textbox.insert(END, "Something")
 my_textbox.pack()
 
 
