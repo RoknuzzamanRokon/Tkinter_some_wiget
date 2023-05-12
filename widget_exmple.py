@@ -29,6 +29,8 @@ my_entry.pack()
 # Create Text Box
 my_textbox = tkinter.Text()
 my_textbox.config(height=10, width=30)
+# Put cursor in text box.
+my_textbox.focus()
 my_textbox.pack()
 
 
