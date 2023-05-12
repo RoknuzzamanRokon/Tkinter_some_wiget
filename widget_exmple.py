@@ -21,6 +21,8 @@ my_button.pack()
 # Create Entry
 my_entry = tkinter.Entry()
 my_entry.config(borderwidth=5, width=30)
+my_entry.insert(index=1, string="Insert some text")
+# print(my_entry.get())
 my_entry.pack()
 
 
@@ -45,6 +47,7 @@ my_checkbutton = tkinter.Checkbutton()
 my_checkbutton.config(text="Is On")
 my_checkbutton.pack()
 
+#
 
 # create Radiobutton
 my_radiobutton = tkinter.Radiobutton()
