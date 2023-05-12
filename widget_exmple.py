@@ -72,11 +72,16 @@ check_status = IntVar()
 my_checkbutton.config(text="Is On", variable=check_status, command=checkbutton_function)
 my_checkbutton.pack()
 
-#
+
+# Create rediobutton function.
+def radiobutton_function():
+    print(check_radiobutton.get())
+
 
 # create Radiobutton
 my_radiobutton = tkinter.Radiobutton()
-my_radiobutton.config(text="Option")
+check_radiobutton = IntVar()
+my_radiobutton.config(text="Option", value=2, variable=check_radiobutton, command=radiobutton_function)
 my_radiobutton.pack()
 
 
