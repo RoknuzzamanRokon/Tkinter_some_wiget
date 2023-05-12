@@ -44,20 +44,32 @@ def spinbox_function():
     print(my_spinbox.get())
 
 
-# Create Spinbox
+# Create Spinbox.
 my_spinbox = tkinter.Spinbox()
-my_spinbox.config(from_=0,to=10,width=5,command=spinbox_function)
+my_spinbox.config(from_=0, to=10, width=5, command=spinbox_function)
 my_spinbox.pack()
 
 
-# Create Scale
+# Scale Functon.
+def scale_function(value):
+    print(value)
+
+
+# Create Scale.
 my_scale = tkinter.Scale()
+my_scale.config(from_=0, to=10, command=scale_function)
 my_scale.pack()
 
 
-# Create checkbutton
+#  Create Function for checkbutton.
+def checkbutton_function():
+    print(check_status.get())
+
+
+# Create checkbutton.
 my_checkbutton = tkinter.Checkbutton()
-my_checkbutton.config(text="Is On")
+check_status = IntVar()
+my_checkbutton.config(text="Is On", variable=check_status, command=checkbutton_function)
 my_checkbutton.pack()
 
 #
