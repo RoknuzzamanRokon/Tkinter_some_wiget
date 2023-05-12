@@ -18,7 +18,7 @@ def button_function():
 
 # Create Button
 my_button = tkinter.Button()
-my_button.config(text="Click Here",command=button_function)
+my_button.config(text="Click Here", command=button_function)
 my_button.pack()
 
 
@@ -39,8 +39,14 @@ my_textbox.insert(END, "Something")
 my_textbox.pack()
 
 
+# Create Spinbox function.
+def spinbox_function():
+    print(my_spinbox.get())
+
+
 # Create Spinbox
 my_spinbox = tkinter.Spinbox()
+my_spinbox.config(from_=0,to=10,width=5,command=spinbox_function)
 my_spinbox.pack()
 
 
