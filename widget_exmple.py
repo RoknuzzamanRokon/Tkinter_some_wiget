@@ -91,13 +91,4 @@ my_listbox.config()
 my_listbox.pack()
 
 
-
-
-
-
-
-
-
 window.mainloop()
-
-
