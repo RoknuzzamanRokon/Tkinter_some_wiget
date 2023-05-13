@@ -8,7 +8,8 @@ window.minsize(width=500, height=300)
 
 # Label
 my_label = tkinter.Label()
-my_label.config(text="Here config \n my label text", foreground="Green", font=("Arial", 24, "bold"))
+my_label.config(text="Here config \n my label text", foreground="Green",
+                font=("Arial", 24, "bold"), padx=20,  pady=20)
 # my_label.pack()
 my_label.grid(row=0, column=0)
 
@@ -35,7 +36,7 @@ my_button.grid(row=1, column=1)
 input = tkinter.Entry(width=20)
 input.config(width=30, borderwidth=2)
 input.insert(index=END, string="Some text example.")
-input.grid(row=2, column=2)
+input.grid(row=3, column=3)
 
 
 # Create another button.
