@@ -19,6 +19,7 @@ def button_fun():
     # my_label["bg"] = "Green"
     my_label["foreground"] = "black"
 
+
 # Create Button
 my_button = tkinter.Button()
 # tkinter.Frame(master=my_button, background="Yellow")
@@ -35,6 +36,12 @@ input = tkinter.Entry(width=20)
 input.config(width=30, borderwidth=2)
 input.insert(index=END, string="Some text example.")
 input.grid(row=2, column=2)
+
+
+# Create another button.
+my_button_2 = Button()
+my_button_2.config(text="I am Second Button.", bg="Red")
+my_button_2.place(x=250, y=250)
 
 window.mainloop()
 
