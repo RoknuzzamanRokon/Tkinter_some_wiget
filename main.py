@@ -1,4 +1,5 @@
 import tkinter
+from tkinter import *
 
 window = tkinter.Tk()
 window.title("This is my tkinter window")
@@ -8,16 +9,16 @@ window.minsize(width=500, height=300)
 # Label
 my_label = tkinter.Label()
 my_label.config(text="Here config my label text", foreground="Green", font=("Arial", 24, "bold"))
+# my_label.pack()
 
 
-# Button
-
+# Button Function
 def button_fun():
     my_label["text"] = "Here config my label text"
     # my_label["bg"] = "Green"
     my_label["foreground"] = "black"
 
-
+# Create Button
 my_button = tkinter.Button(text='Click me', command=button_fun, width=20, height=1)
 # tkinter.Frame(master=my_button, background="Yellow")
 my_button.config(text="start Game")
@@ -28,7 +29,10 @@ my_button.pack()
 # my_button.pack()
 
 
+# Create Entry.
 input = tkinter.Entry(width=20)
+input.config(width=30, borderwidth=2)
+input.insert(index=END, string="Some text example.")
 input.pack()
 
 window.mainloop()
