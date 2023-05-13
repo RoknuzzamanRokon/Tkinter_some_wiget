@@ -4,6 +4,7 @@ from tkinter import *
 window = tkinter.Tk()
 window.title("This is my tkinter window")
 window.minsize(width=500, height=300)
+window.config(padx=50, pady=50)
 
 
 # Label
@@ -39,11 +40,10 @@ input.insert(index=END, string="Some text example.")
 input.grid(row=3, column=3)
 
 
-# Create another button.
+# Create another Button.
 my_button_2 = Button()
 my_button_2.config(text="I am Second Button.", bg="Red")
 my_button_2.grid(row=0, column=2)
 
 
 window.mainloop()
-
