@@ -6,25 +6,20 @@ window.minsize(width=500, height=300)
 
 
 # Label
-
-my_label = tkinter.Label(text='click', font=("Arial", 24, "bold"))
-# my_label.config() # Create a custom size for label.
-my_label.pack(side='top')
-my_label.config(text="Here config my label text", foreground="Green", )
+my_label = tkinter.Label()
+my_label.config(text="Here config my label text", foreground="Green", font=("Arial", 24, "bold"))
 
 
 # Button
 
 def button_fun():
-    my_label["text"] = input.get()
-    my_label["bg"] = "Green"
+    my_label["text"] = "Here config my label text"
+    # my_label["bg"] = "Green"
     my_label["foreground"] = "black"
 
 
-
-
 my_button = tkinter.Button(text='Click me', command=button_fun, width=20, height=1)
-tkinter.Frame(master=my_button, background="Yellow")
+# tkinter.Frame(master=my_button, background="Yellow")
 my_button.config(text="start Game")
 my_button.pack()
 
@@ -36,6 +31,5 @@ my_button.pack()
 input = tkinter.Entry(width=20)
 input.pack()
 
-print(input.get())
 window.mainloop()
 
