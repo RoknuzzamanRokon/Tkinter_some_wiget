@@ -6,7 +6,6 @@ window.minsize(width=500, height=300)
 
 
 # Label
-
 my_label = tkinter.Label(text='click', font=("Arial", 24, "bold"))
 # my_label.config() # Create a custom size for label.
 my_label.pack(side='top')
@@ -19,8 +18,6 @@ def button_fun():
     my_label["text"] = input.get()
     my_label["bg"] = "Green"
     my_label["foreground"] = "black"
-
-
 
 
 my_button = tkinter.Button(text='Click me', command=button_fun, width=20, height=1)
@@ -38,4 +35,3 @@ input.pack()
 
 print(input.get())
 window.mainloop()
-
