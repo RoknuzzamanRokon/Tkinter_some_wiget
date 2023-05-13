@@ -41,7 +41,8 @@ input.grid(row=2, column=2)
 # Create another button.
 my_button_2 = Button()
 my_button_2.config(text="I am Second Button.", bg="Red")
-my_button_2.place(x=250, y=250)
+my_button_2.grid(row=0, column=2)
+
 
 window.mainloop()
 
